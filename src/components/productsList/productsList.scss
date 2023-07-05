@@ -1,0 +1,114 @@
+.productsList {
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+    .container {
+        position: relative;
+    }
+
+    .productsList__btn {
+        position: absolute;
+        left: 5%;
+        background: transparent;
+        border: none;
+        transform: rotate(180deg);
+
+        &:hover {
+            svg {
+                fill: #e6af5d;
+            }
+        }
+    }
+
+    .productsList_heading {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 32px;
+        color: #202020;
+    }
+
+    .productsList__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        animation: 1.5s anim-lineDown ease-out backwards;
+
+        @keyframes anim-lineDown {
+            0% {
+                opacity: 0;
+                transform: translateY(80%);
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        .productsList__item {
+            display: flex;
+            width: 100%;
+            max-width: 300px;
+            margin: 20px 10px;
+            padding: 30px;
+            flex-direction: column;
+            border: 1px solid #9995958a;
+            cursor: pointer;
+
+            img {
+                display: block;
+                width: 300px;
+                height: 500px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.08);
+                }
+            }
+
+            .productsList__item__title {
+                display: block;
+                margin: 0;
+                margin-bottom: 20px;
+                padding: 0;
+                text-align: center;
+                font-size: 28px;
+                color: #202020;
+            }
+
+            .productsList__item__btn {
+                display: block;
+                width: 100%;
+                max-width: 170px;
+                margin: 0 auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                background: #202020;
+                border: 1ps solid #202020;
+                outline: none;
+
+                &:hover {
+                    color: #202020;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

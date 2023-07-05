@@ -1,0 +1,97 @@
+.home-sales {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 50px;
+    padding: 20px;
+    // padding-top: 300px;
+    background-image: url("../../assets/images/108.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .home-sales__text {
+        animation: 2s anim-popoutin ease infinite;
+
+        @keyframes anim-popoutin {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            25% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .home-sales__box {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .home-sales__text {
+        display: block;
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 52px;
+        font-weight: bold;
+        color: rgba(241, 128, 128, 0.615);
+        text-align: center;
+    }
+
+    .home-sales__btn {
+        display: block;
+        max-width: 40%;
+        margin: 0 auto;
+        padding: 13px 28px;
+        color: #fff;
+        font-weight: 700;
+        background: #202020;
+        border: 1px solid #202020;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            color: #202020;
+            background: #fff;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .home-sales__box {
+            .home-sales__text {
+                font-size: 48px;
+            }
+
+            .home-sales__btn {
+                max-width: 50%;
+                padding: 10px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 405px) {
+        .home-sales__box {
+            .home-sales__text {
+                font-size: 32px;
+            }
+        }
+    }
+
+}

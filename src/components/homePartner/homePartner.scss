@@ -1,0 +1,62 @@
+.home-partner {
+    margin-bottom: 50px;
+
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .home-partner__slider {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+
+        .home-partner__slider__item {
+            display: block;
+            margin: 10px;
+            margin-bottom: 30px;
+            animation-duration: 1.4s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+
+            &:hover {
+                animation-name: bounce;
+                animation-timing-function: ease;
+            }
+
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-25px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .home-partner__heading {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 24px;
+        color: #202020;
+    }
+}

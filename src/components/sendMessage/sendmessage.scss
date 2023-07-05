@@ -1,0 +1,135 @@
+.send-message {
+    margin-bottom: 50px;
+
+    .send-message__title {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #202020;
+    }
+
+    .send-message__headding {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 48px;
+        color: #332f2c;
+    }
+
+    .send-message__input-box {
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .send-message__input-name {
+        width: 100%;
+        max-width: 450px;
+        margin: 10px;
+        padding: 14px;
+        // border-radius: 8px;
+        border: 1px solid #b8b3b37e;
+        font-size: 14px;
+
+        &:focus {
+            border: none;
+            outline: 1px solid #202020;
+        }
+    }
+
+    .send-message__input-phone {
+        width: 100%;
+        max-width: 450px;
+        margin: 10px;
+        padding: 14px;
+        // border-radius: 8px;
+        border: 1px solid #b8b3b37e;
+        font-size: 14px;
+
+        &:focus {
+            border: none;
+            outline: 1px solid #202020;
+        }
+    }
+
+    .send-message__input-subject {
+        display: block;
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 14px;
+        border-radius: 8px;
+        border: 1px solid #b8b3b37e;
+        font-size: 14px;
+
+        &:focus {
+            border: none;
+            outline: 1px solid #202020;
+        }
+    }
+
+    .send-message__input-message {
+        display: block;
+        width: 100%;
+        max-width: 980px;
+        height: 100%;
+        min-height: 200px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 14px;
+        // border-radius: 8px;
+        border: 1px solid #b8b3b37e;
+        font-size: "Montserrat" !important; 
+        font-size: 14px;
+
+        &:focus {
+            border: none;
+            outline: 1px solid #202020;
+        }
+    }
+
+    .send-message__btn {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 130px;
+        margin: 0 auto;
+        padding: 14px;
+        padding-right: 150px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        // border-radius: 15px;
+        border: 1px solid #202020;
+        background: #202020;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #fff;
+            color: #202020;
+
+            svg {
+                fill: #202020;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+            display: block;
+            margin-left: 10px;
+        }
+    }
+}

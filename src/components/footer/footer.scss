@@ -1,0 +1,167 @@
+.footer {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #202020;
+
+    .footer__box {
+        display: flex;
+        width: 100%;
+        max-width: 1400px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .footer__left__list {
+            display: block;
+            width: 300px;
+            margin: 5px;
+
+            .footer__left__item {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+
+                .footer__left__item__link {
+                    display: block;
+                    margin-left: 10px;
+                    color: #cccccc;
+                }
+
+                .footer__left__item__box {
+                    display: flex;
+                    width: 200px;
+                    justify-content: space-between;
+
+                    .footer__left__item__box__link {
+                        img {
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer__left__item+.footer__left__item {
+                margin-top: 20px;
+            }
+        }
+
+        .footer__right__list {
+            display: block;
+            width: 200px;
+            margin: 5px;
+            padding: 0;
+
+            .footer__right__item {
+                display: block;
+
+                .footer__right__item__title {
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                    color: #cccccc;
+                }
+
+                .footer__right__item__link {
+                    display: block;
+                    font-size: 14px;
+                    color: #cccccc;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .footer__right__item+.footer__right__item {
+                margin-top: 20px;
+            }
+        }
+
+        .footer__form-box {
+            display: block;
+            width: 240px;
+
+            .footer__form__title {
+                margin-bottom: 40px;
+                font-size: 18px;
+                color: #cccccc;
+            }
+
+            .footer__input-name {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 10px;
+                font-size: 14px;
+                border: 2px solid #0000003d;
+
+                &:focus {
+                    border: none;
+                    outline: 2px solid #e6af5d;
+                }
+            }
+
+            .footer__form-btn {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px;
+                color: #202020;
+                font-weight: bold;
+                font-size: 16px;
+                background: #fff;
+                border: 1px solid #000;
+
+                &:hover {
+                    background: #e6af5d;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 760px) {
+        .footer__box {
+            // flex-direction: column;
+
+            .footer__left__list {
+                margin-bottom: 30px;
+            }
+
+            .footer__form-box {
+                display: block;
+                width: 100%;
+
+                .footer__input-name {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .footer__form-btn {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 615px) {
+        .footer__box {
+            flex-direction: column;
+
+            .footer__left__list,
+            .footer__right__list {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
