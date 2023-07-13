@@ -1,6 +1,7 @@
 import './homeIntro.scss';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import content from '../../Localization/content';
 
 import img1 from '../../assets/images/31.png';
 import img2 from '../../assets/images/53.png';
@@ -46,7 +47,7 @@ const data = [
 	},
 ];
 
-function HomeIntro() {
+function HomeIntro({ lang }) {
 	const [products, setProducts] = useState(data);
 	const navigate = useNavigate();
 	const [index, setIndex] = useState(0);
@@ -102,7 +103,7 @@ function HomeIntro() {
 						<button
 							className='home-intro__btn'
 							onClick={() => navigate('/categories')}>
-							КУПИТЬ СЕЙЧАС
+							{content[lang].main.intro_btn}
 						</button>
 					</div>
 

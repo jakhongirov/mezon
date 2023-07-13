@@ -156,25 +156,29 @@ const categories = [
 const types = [
     {
         id: 1,
-        type_name: "Двери",
+        ru: "Двери",
+        uz: "Eshiklar",
         image: TypeImg1,
         icon: DoorIcon
     },
     {
         id: 2,
-        type_name: "Декоративный пано для стены",
+        ru: "Декоративный пано для стены",
+        uz: "Devor uchun dekorativ panel",
         image: TypeImg2,
         icon: TableIcon
     },
     {
         id: 3,
-        type_name: "Кухонный гарнитур",
+        ru: "Кухонный гарнитур",
+        uz: "Oshxona to'plami",
         image: TypeImg3,
         icon: KitchenIcon
     },
     {
         id: 4,
-        type_name: "Спалный гарнитур",
+        ru: "Спалный гарнитур",
+        uz: "Yotoq xonasi to'plami",
         image: TypeImg4,
         icon: BedIcon
     }

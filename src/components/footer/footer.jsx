@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './footer.scss';
+import content from '../../Localization/content';
 
 import Logo from '../../assets/images/logo.png';
 import Instagram from '../../assets/images/instagram.svg';
@@ -8,7 +9,7 @@ import Facebook from '../../assets/images/facebook.svg';
 // import Youtube from '../../assets/images/youtube.svg'
 import Email from '../../assets/images/email.svg';
 
-function Footer() {
+function Footer({ lang }) {
 	const sendMessageBot = (e) => {
 		e.preventDefault();
 		const { name, phone } = e.target.elements;
@@ -138,48 +139,52 @@ function Footer() {
 					<ul className='footer__right__list'>
 						<li className='footer__right__item'>
 							<h3 className='footer__right__item__title'>
-								Быстрые ссылки
+								{content[lang].footer.quick_link}
 							</h3>
 						</li>
 						<li className='footer__right__item'>
 							<Link className='footer__right__item__link' to={'/about'}>
-								О нас
+								{content[lang].header.links.about}
 							</Link>
 						</li>
 						<li className='footer__right__item'>
 							<Link
 								className='footer__right__item__link'
-								to={'/products'}>
-								Продукты
+								to={'/categories'}>
+								{content[lang].header.links.catalog}
 							</Link>
 						</li>
 						<li className='footer__right__item'>
 							<Link
 								className='footer__right__item__link'
 								to={'/contact'}>
-								Контакт
+								{content[lang].header.links.contact}
 							</Link>
 						</li>
 					</ul>
 
 					<div className='footer__form-box'>
-						<h3 className='footer__form__title'>Отправить сообщение</h3>
+						<h3 className='footer__form__title'>
+							{content[lang].footer.form_title}
+						</h3>
 						<form onSubmit={sendMessageBot}>
 							<input
 								className='footer__input-name'
 								type='text'
 								name='name'
-								placeholder='Имя'
+								placeholder={content[lang].input.name}
 								required
 							/>
 							<input
 								className='footer__input-name'
 								type='text'
 								name='phone'
-								placeholder='Телефон'
+								placeholder={content[lang].input.phone}
 								required
 							/>
-							<button className='footer__form-btn'>Отправлять</button>
+							<button className='footer__form-btn'>
+								{content[lang].input.btn}
+							</button>
 						</form>
 					</div>
 				</div>

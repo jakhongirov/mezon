@@ -1,5 +1,6 @@
 import './homePartner.scss';
 import { useEffect, useState } from 'react';
+import content from '../../Localization/content';
 
 import Gross from '../../assets/images/gross.svg';
 
@@ -50,7 +51,7 @@ const clientData = [
 	// },
 ];
 
-function HomePartner() {
+function HomePartner({ lang }) {
 	const [partner, setPartner] = useState(partnersData);
 	const [client, setClient] = useState(clientData);
 
@@ -76,7 +77,9 @@ function HomePartner() {
 	return (
 		<section className='home-partner'>
 			<div className='container reveal'>
-				<h2 className='home-partner__heading'>Наши партнёры</h2>
+				<h2 className='home-partner__heading'>
+					{content[lang].main.partner_heading}
+				</h2>
 
 				<ul className='mySwiper home-partner__slider'>
 					{partner.map((e, i) => (
@@ -92,7 +95,9 @@ function HomePartner() {
 					))}
 				</ul>
 
-				<h2 className='home-partner__heading'>Наши клиенты</h2>
+				<h2 className='home-partner__heading'>
+					{content[lang].main.client_heading}
+				</h2>
 
 				<ul className='mySwiper home-partner__slider'>
 					{client.map((e, i) => (

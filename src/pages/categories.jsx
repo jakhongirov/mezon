@@ -1,19 +1,19 @@
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
-import CategoriesList from "../components/categoriesList/categoriesList"
+import Header from '../components/header/header';
+import Footer from '../components/footer/footer';
+import CategoriesList from '../components/categoriesList/categoriesList';
 
-function Categories() {
-    return (
-        <>
-            <Header />
+function Categories({ lang, setLang }) {
+	return (
+		<>
+			<Header lang={lang} setLang={setLang} />
 
-            <main className="main">
-                <CategoriesList />
-            </main>
+			<main className='main'>
+				<CategoriesList lang={lang} />
+			</main>
 
-            <Footer />
-        </>
-    )
+			<Footer lang={lang} />
+		</>
+	);
 }
 
-export default Categories
+export default Categories;

@@ -4,18 +4,18 @@ import AboutIntro from '../components/aboutIntro/aboutIntro';
 import Company from '../components/company/company';
 import Team from '../components/team/team';
 
-function AboutPage() {
+function AboutPage({ lang, setLang }) {
 	return (
 		<>
-			<Header />
+			<Header lang={lang} setLang={setLang} />
 
 			<main className='main'>
-				<AboutIntro />
-				<Company />
-				<Team />
+				<AboutIntro lang={lang} />
+				<Company lang={lang} />
+				<Team lang={lang} />
 			</main>
 
-			<Footer />
+			<Footer lang={lang} />
 		</>
 	);
 }

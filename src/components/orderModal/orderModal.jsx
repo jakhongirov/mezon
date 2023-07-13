@@ -1,6 +1,7 @@
 import './orderModal.scss';
+import content from '../../Localization/content';
 
-function OrderModal({ show, setShow }) {
+function OrderModal({ lang, show, setShow }) {
 	const sendMessageBot = (e) => {
 		e.preventDefault();
 		const { name, phone } = e.target.elements;
@@ -39,22 +40,26 @@ function OrderModal({ show, setShow }) {
 				</button>
 
 				<form onSubmit={sendMessageBot}>
-					<h2 className='modal__item__title'>Оформить заказ</h2>
+					<h2 className='modal__item__title'>
+						{lang == 'ru' ? 'Оформить заказ' : 'Buyurma berish'}
+					</h2>
 					<input
 						className='modal__input-name'
 						type='text'
 						name='name'
-						placeholder='Имя'
+						placeholder={content[lang].input.name}
 						required
 					/>
 					<input
 						className='modal__input-name'
 						type='text'
 						name='phone'
-						placeholder='Телефон'
+						placeholder={content[lang].input.phone}
 						required
 					/>
-					<button className='modal__form-btn'>Отправлять</button>
+					<button className='modal__form-btn'>
+						{content[lang].input.btn}
+					</button>
 				</form>
 			</div>
 		</div>

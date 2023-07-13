@@ -1,6 +1,6 @@
 import './team.scss';
 
-function Team() {
+function Team({ lang }) {
 	const data = [
 		{
 			id: 1,
@@ -31,7 +31,9 @@ function Team() {
 	return (
 		<section className='team'>
 			<div className='container'>
-				<h2 className='team__headding'>НАША КОМАНДА</h2>
+				<h2 className='team__headding'>
+					{lang == 'ru' ? 'НАША КОМАНДА' : 'BIZNING JAMOA'}
+				</h2>
 
 				<ul className='team__list'>
 					{data.map((e, i) => (

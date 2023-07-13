@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import OrderModal from '../orderModal/orderModal';
 import PhotoModal from '../photoModal/photoModal';
 
-function CategoriesList() {
+function CategoriesList({ lang }) {
 	const navigate = useNavigate();
 	const [type, setType] = useState(1);
 	const [products, setProducts] = useState([]);
@@ -52,9 +52,7 @@ function CategoriesList() {
 								height={50}
 							/>
 							<div className='categories__item__box'>
-								<h3 className='categories__item__title'>
-									{e.type_name}
-								</h3>
+								<h3 className='categories__item__title'>{e[lang]}</h3>
 							</div>
 						</li>
 					))}
@@ -86,7 +84,7 @@ function CategoriesList() {
 								<button
 									className='products__item__btn'
 									onClick={() => setShow(true)}>
-									Заказать
+									{lang == 'ru' ? 'Заказать' : 'Buyurtma'}
 								</button>
 							</li>
 						))}
@@ -122,7 +120,7 @@ function CategoriesList() {
 										onClick={() =>
 											navigate(`/products/${e.category_name}`)
 										}>
-										Смотреть
+										{lang == 'ru' ? 'Смотреть' : "Ko'rish"}
 									</button>
 								</div>
 							</li>
@@ -131,7 +129,7 @@ function CategoriesList() {
 				</div>
 			</div>
 
-			<OrderModal show={show} setShow={setShow} />
+			<OrderModal lang={lang} show={show} setShow={setShow} />
 			<PhotoModal show={photo} setShow={setPhoto} id={id} />
 		</section>
 	);

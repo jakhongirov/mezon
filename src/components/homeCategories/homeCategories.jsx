@@ -7,8 +7,9 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import { FreeMode, Autoplay, Navigation } from 'swiper';
 import Loader from '../loader/loader';
+import content from '../../Localization/content';
 
-function HomeCategories() {
+function HomeCategories({ lang }) {
 	const [SlidesCount, setSlidesCount] = useState(3);
 	const [type, setType] = useState(1);
 	const [products, setProducts] = useState([]);
@@ -50,7 +51,9 @@ function HomeCategories() {
 	return (
 		<section className='categories'>
 			<div className='container'>
-				<h2 className='categories__heading'>Категории</h2>
+				<h2 className='categories__heading'>
+					{content[lang].main.category_heading}
+				</h2>
 
 				<div className='categories__box'>
 					<ul className='categories__list'>
@@ -76,7 +79,7 @@ function HomeCategories() {
 								/>
 								<div className='categories__item__box'>
 									<h3 className='categories__item__title'>
-										{e.type_name}
+										{e[lang]}
 									</h3>
 								</div>
 							</li>
