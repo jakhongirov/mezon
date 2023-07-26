@@ -29,7 +29,7 @@ function ContactInfo({ lang }) {
 						</h4>
 						<p className='contact__item__text'>
 							{lang == 'ru' ? 'Головной офис' : 'Bosh idora'}: Махтумкули
-							улица, Ташкент, Mirzo Ulugbek, Ташкент, Узбекистан <br />
+							улица, Ташкент, Яшнабод, Ташкент, Узбекистан <br />
 						</p>
 					</li>
 

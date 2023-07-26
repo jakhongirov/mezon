@@ -2,7 +2,7 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import AboutIntro from '../components/aboutIntro/aboutIntro';
 import Company from '../components/company/company';
-import Team from '../components/team/team';
+// import Team from '../components/team/team';
 
 function AboutPage({ lang, setLang }) {
 	return (
@@ -12,7 +12,7 @@ function AboutPage({ lang, setLang }) {
 			<main className='main'>
 				<AboutIntro lang={lang} />
 				<Company lang={lang} />
-				<Team lang={lang} />
+				{/* <Team lang={lang} /> */}
 			</main>
 
 			<Footer lang={lang} />
