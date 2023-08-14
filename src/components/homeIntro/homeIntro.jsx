@@ -5,17 +5,17 @@ import content from '../../Localization/content';
 
 import img1 from '../../assets/images/31.png';
 import img2 from '../../assets/images/53.png';
-import img3 from '../../assets/images/70.png';
+import img3 from '../../assets/images/64.png';
 import img4 from '../../assets/images/97.png';
 import img5 from '../../assets/images/118.png';
 
 const data = [
 	{
-		id: 1,
-		title: 'Hi-Tech doors',
+		id: 3,
+		title: 'Neo Classic doors',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate assumenda, sint commodi eos consectetur voluptates corrupti beatae quidem ipsam?',
-		image: img1,
-		bg: '#9290902c',
+		image: img3,
+		bg: '#bdbcbc8f',
 	},
 	{
 		id: 2,
@@ -25,11 +25,11 @@ const data = [
 		bg: '#7972723f',
 	},
 	{
-		id: 3,
-		title: 'Neo Classic doors',
+		id: 1,
+		title: 'Hi-Tech doors',
 		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptate assumenda, sint commodi eos consectetur voluptates corrupti beatae quidem ipsam?',
-		image: img3,
-		bg: '#848383b9',
+		image: img1,
+		bg: '#9290902c',
 	},
 	{
 		id: 4,

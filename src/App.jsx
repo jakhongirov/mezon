@@ -25,7 +25,10 @@ function App() {
 				path='/categories'
 				element={<Categories lang={lang} setLang={setLang} />}
 			/>
-			<Route path='/products/:category_name' element={<ProductsPage />} />
+			<Route
+				path='/products/:category_name'
+				element={<ProductsPage lang={lang} setLang={setLang} />}
+			/>
 		</Routes>
 	);
 }

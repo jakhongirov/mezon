@@ -10,7 +10,7 @@ const content = {
       },
 
       main: {
-         intro_btn: "HOZIR XARID QILISH",
+         intro_btn: "HOZIR BUYURTMA BERING",
          product_heading: "YANGI MAHSULOTLAR",
          category_heading: "Kategoriyalar",
          catalog_title: "Bizning katalogimizni yuklab oling",
@@ -37,6 +37,10 @@ const content = {
             sifat, 5 yil kafolat, qisqa muddatli va o'z vaqtida
             buyurtma tayyorlash.`,
          },
+
+         products: {
+            btn: "Buyurtma berish"
+         }
       },
 
       footer: {
@@ -64,7 +68,7 @@ const content = {
       },
 
       main: {
-         intro_btn: "КУПИТЬ СЕЙЧАС",
+         intro_btn: "Заказат сейчас",
          product_heading: "НОВЫЕ ПРОДУКТЫ",
          category_heading: "Категории",
          catalog_title: "Скачайте наш каталог",
@@ -91,6 +95,10 @@ const content = {
             качество, гарантия 5 лет, краткосрочная и своевременная
             подготовка заказа.`,
          },
+
+         products: {
+            btn: "Заказать"
+         }
       },
 
       footer: {

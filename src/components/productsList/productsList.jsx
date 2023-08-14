@@ -4,8 +4,9 @@ import { categories, data } from '../../assets/data/data';
 import OrderModal from '../orderModal/orderModal';
 import PhotoModal from '../photoModal/photoModal';
 import { useNavigate } from 'react-router-dom';
+import content from '../../Localization/content';
 
-function ProductsList({ category_name }) {
+function ProductsList({ lang, category_name }) {
 	const [products, setPorducts] = useState([]);
 	const [show, setShow] = useState(false);
 	const [photo, setPhoto] = useState(false);
@@ -57,15 +58,15 @@ function ProductsList({ category_name }) {
 							<button
 								className='productsList__item__btn'
 								onClick={() => setShow(true)}>
-								Заказать
+								{content[lang].main.products.btn}
 							</button>
 						</li>
 					))}
 				</ul>
 			</div>
 
-			<OrderModal show={show} setShow={setShow} />
-			<PhotoModal show={photo} setShow={setPhoto} id={id} />
+			<OrderModal lang={lang} show={show} setShow={setShow} />
+			<PhotoModal lang={lang} show={photo} setShow={setPhoto} id={id} />
 		</section>
 	);
 }

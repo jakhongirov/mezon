@@ -9,7 +9,7 @@ import content from '../../Localization/content';
 
 function HomeDoorsProcducts({ lang }) {
 	// const [SlidesCount, setSlidesCount] = useState(4)
-	const [category, setCategory] = useState(1);
+	const [category, setCategory] = useState(3);
 	const [door, setDoor] = useState([]);
 
 	// useEffect(() => {

@@ -132,24 +132,24 @@ import BedIcon from '../../assets/images/bed icon.svg'
 
 const categories = [
     {
-        id: 1,
-        category_name: "Hi-Tech"
+        id: 3,
+        category_name: "Neo Classic"
     },
     {
         id: 2,
         category_name: "Classic"
     },
     {
-        id: 3,
-        category_name: "Neo Classic"
-    },
-    {
-        id: 4,
-        category_name: "Luxury"
+        id: 1,
+        category_name: "Hi-Tech"
     },
     {
         id: 5,
         category_name: "Exlusive"
+    },
+    {
+        id: 4,
+        category_name: "Luxury"
     },
 ]
 

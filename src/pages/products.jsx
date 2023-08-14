@@ -3,18 +3,18 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import ProductsList from '../components/productsList/productsList';
 
-function ProductsPage() {
+function ProductsPage({ lang, setLang }) {
 	const { category_name } = useParams();
 
 	return (
 		<>
-			<Header />
+			<Header lang={lang} setLang={setLang} />
 
 			<main className='main'>
-				<ProductsList category_name={category_name} />
+				<ProductsList lang={lang} category_name={category_name} />
 			</main>
 
-			<Footer />
+			<Footer lang={lang} />
 		</>
 	);
 }
